@@ -1,0 +1,10 @@
+name: flake8-check 
+on: push
+jobs:
+  lint-with-flake8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: run flake8
+        run: make lint
