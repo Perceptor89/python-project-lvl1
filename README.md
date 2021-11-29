@@ -6,3 +6,6 @@
 
 ### flake8 test
 [![flake8-check](https://github.com/Perceptor89/python-project-lvl1/actions/workflows/flake8-check.yml/badge.svg)](https://github.com/Perceptor89/python-project-lvl1/actions/workflows/flake8-check.yml)
+
+### asciinema step 5
+[![asciicast](https://asciinema.org/a/452174.svg)](https://asciinema.org/a/452174)
