@@ -9,3 +9,5 @@
 
 ### asciinema step 5
 [![asciicast](https://asciinema.org/a/452174.svg)](https://asciinema.org/a/452174)
+
+<a href="https://asciinema.org/a/452174" target="_blank"><img src="https://asciinema.org/a/452174.svg" /></a>
