@@ -18,3 +18,6 @@
 
 ### asciinema step 8
 [![asciicast](https://asciinema.org/a/HNQu00CNrRTKDN14rwsPIH2Bt.svg)](https://asciinema.org/a/HNQu00CNrRTKDN14rwsPIH2Bt)
+
+### asciinema step 9
+[![asciicast](https://asciinema.org/a/2basmr8H1wda8mPn19n7TO3Hl.svg)](https://asciinema.org/a/2basmr8H1wda8mPn19n7TO3Hl)
