@@ -12,14 +12,9 @@ def get_expression_with_answer():
         low_number = number_1
     else:
         low_number = number_2
-#    print(f'low_number = {low_number}')
     for divider in range(1, low_number + 1):
-#        print(f'divider = {divider}')
         if (number_1 % divider == 0) and (number_2 % divider == 0):
-#            print(f'%1 = {number_1 % divider}' + f'%2 = {number_2 % divider}')
-#            print(f'new_correct_answer = {divider}')
             correct_answer = divider
-#    print(f'correct_answer = {correct_answer}')
     return [expression, correct_answer]
 
 
