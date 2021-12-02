@@ -6,16 +6,16 @@ from brain_games.scripts import brain_lib
 
 def get_expression_with_answer():
     number = random.randint(1, 101)
-    
+
     is_prime = True
     i = 2
-    while is_prime == True and i < number:
+    while is_prime is True and i < number:
         if number % i != 0:
             i += 1
         else:
             is_prime = False
-    
-    if is_prime == True:
+
+    if is_prime is True:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
