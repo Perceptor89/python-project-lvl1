@@ -26,11 +26,11 @@ def main():
     user_name = brain_lib.welcome_user()
     print('What number is missing in the progression?')
 
-    is_right_answer = True
+    is_right = True
     count = 3
-    while count > 0 and is_right_answer is True:
-        expression, correct_answer = get_expression_with_answer()
-        is_right_answer, count = brain_lib.question_and_answer(expression, correct_answer, count)
+    while count > 0 and is_right is True:
+        expression, corr_answ = get_expression_with_answer()
+        is_right, count = brain_lib.qtn_and_answ(expression, corr_answ, count)
 
     brain_lib.ending(count, user_name)
 

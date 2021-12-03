@@ -11,16 +11,17 @@ def welcome_user():
     return name
 
 
-def question_and_answer(expression, correct_answer, count):
+def qtn_and_answ(expression, corr_answ, count):
     print(f'Question: {expression}')
-    user_answer = prompt.string('Your answer: ')
-    if str(user_answer) == str(correct_answer):
+    usr_answ = prompt.string('Your answer: ')
+    if str(usr_answ) == str(corr_answ):
         print('Correct!')
         count -= 1
         is_right_answer = True
         return [is_right_answer, count]
     else:
-        print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.')
+        string = ' is wrong answer ;(. Correct answer was '
+        print(f'\'{usr_answ}\' + {string} + \'{corr_answ}\'.')
         is_right_answer = False
         return [is_right_answer, count]
 

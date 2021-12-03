@@ -19,10 +19,10 @@ def main():
     print('Answer \'yes\' if the number is even, otherwise answer \'no\'.')
 
     count = 3
-    is_right_answer = True
-    while count > 0 and is_right_answer is True:
-        number, correct_answer = get_number_with_answer()
-        is_right_answer, count = brain_lib.question_and_answer(number, correct_answer, count)
+    is_right = True
+    while count > 0 and is_right is True:
+        number, corr_answ = get_number_with_answer()
+        is_right, count = brain_lib.qtn_and_answ(number, corr_answ, count)
 
     brain_lib.ending(count, user_name)
 
