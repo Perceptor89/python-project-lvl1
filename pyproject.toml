@@ -8,7 +8,7 @@ packages = [
     { include = "brain_games" },
 ]
 classifiers = [
-    Topic :: Games/Entertainment
+    "Topic :: Games/Entertainment"
 ]
 
 [tool.poetry.dependencies]
