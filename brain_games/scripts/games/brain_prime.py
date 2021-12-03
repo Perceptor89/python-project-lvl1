@@ -5,7 +5,7 @@ from brain_games.scripts import brain_lib
 
 
 def get_expression_with_answer():
-    number = random.randint(1, 101)
+    number = random.randint(1, 100)
     is_prime = True
     i = 2
     while is_prime is True and i < number:

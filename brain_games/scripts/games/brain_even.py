@@ -5,7 +5,7 @@ from brain_games.scripts import brain_lib
 
 
 def get_number_with_answer():
-    number = random.randint(1, 101)
+    number = random.randint(1, 100)
     if number % 2 == 0:
         correct_answer = 'yes'
     else:
