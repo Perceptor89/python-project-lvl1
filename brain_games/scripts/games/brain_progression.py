@@ -6,7 +6,7 @@ from brain_games.scripts import brain_lib
 
 def get_expression_with_answer():
     start_number = random.randint(1, 20)
-    expression = f''
+    expression = ''
     leg_value = random.randint(1, 10)
     number_of_elements = random.randint(5, 10)
     secret_element_index = random.randint(0, number_of_elements - 1)
