@@ -6,12 +6,12 @@ from brain_games.scripts import brain_lib
 
 def get_expression_with_answer():
     start_number = random.randint(1, 20)
-    expression = f'{start_number}'
+    expression = f''
     leg_value = random.randint(1, 10)
     number_of_elements = random.randint(5, 10)
-    secret_element = random.randint(1, number_of_elements)
-    for i in range(1, number_of_elements):
-        if secret_element == i:
+    secret_element_index = random.randint(0, number_of_elements - 1)
+    for i in range(0, number_of_elements):
+        if secret_element_index == i:
             correct_answer = start_number + i * leg_value
             current_symbol = '..'
             expression += f' {current_symbol}'
