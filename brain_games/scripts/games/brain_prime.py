@@ -6,14 +6,13 @@ from brain_games.scripts import brain_lib
 
 def get_expression_with_answer():
     number = random.randint(1, 100)
-    is_prime = True
-    i = 2
-    while is_prime is True and i < number:
-        if number % i != 0:
-            i += 1
-        else:
-            is_prime = False
-    if is_prime is True:
+    i = 1
+    dividers_count = 0
+    while i <= number:
+        if number % i == 0:
+            dividers_count += 1
+        i += 1
+    if dividers_count == 2:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
