@@ -17,8 +17,8 @@ To use this app you need to:
 
 ### Installation
 To install app clone this repository to yor local space and install it with pip.
-Just use 'python3 -m pip install --user dist/*.whl' command.
-Use 'python3 -m pip install --user dist/*.whl' to remove app.
+Just use 'python3 -m pip install --user dist/&ast;.whl' command.
+Use 'python3 -m pip install --user dist/&ast;.whl' to remove app.
 
 
 ### asciinema step 5

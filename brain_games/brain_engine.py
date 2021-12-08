@@ -1,3 +1,4 @@
+from types import FunctionType
 import prompt
 
 
@@ -21,7 +22,7 @@ def qtn_and_answ(expression, corr_answ, count):
         return [is_right_answer, count]
     else:
         string = ' is wrong answer ;(. Correct answer was '
-        print(f'\'{usr_answ}\' + {string} + \'{corr_answ}\'.')
+        print(f'\'{usr_answ}\' {string} \'{corr_answ}\'.')
         is_right_answer = False
         return [is_right_answer, count]
 
@@ -33,8 +34,18 @@ def ending(count: int, user_name: str):
         print(f'Congratulations, {user_name}!')
 
 
-def main():
-    print('Это библиотека, которую нельзя запустить как скрипт')
+def main(game_expression_with_answer: FunctionType, condition: str):
+    greet()
+    user_name = welcome_user()
+    print(condition)
+
+    is_right = True
+    count = 3
+    while count > 0 and is_right is True:
+        expression, corr_answ = game_expression_with_answer()
+        is_right, count = qtn_and_answ(expression, corr_answ, count)
+
+    ending(count, user_name)
 
 
 if __name__ == '__main__':
