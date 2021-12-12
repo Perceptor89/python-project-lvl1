@@ -3,26 +3,26 @@
 import random
 
 
-def get_expression_with_answer():
-    strt_num = random.randint(1, 20)
-    leg = random.randint(1, 10)
-    number_of_elements = random.randint(5, 10)
-    progression = [(strt_num + i * leg) for i in range(0, number_of_elements)]
-    secret_element_index = random.randint(0, number_of_elements - 1)
-    correct_answer = progression[secret_element_index]
+def generate_progression(prg_start, prg_difference, prg_length):
+    prg = [(prg_start + i * prg_difference) for i in range(0, prg_length)]
+    return prg
+
+
+def generate_expression_answer():
+    # get random progression parameters
+    prg_start = random.randint(1, 20)
+    prg_difference = random.randint(1, 10)
+    prg_length = random.randint(5, 10)
+    # generate progression
+    progression = generate_progression(prg_start, prg_difference, prg_length)
+    # get random secret element
+    secret_element_index = random.randint(0, prg_length - 1)
+    answer = progression[secret_element_index]
+    # hiding secret element
     progression[secret_element_index] = '..'
+    # make string expression from progression
     expression = ' '.join(map(str, progression))
-    return [expression, correct_answer]
+    return [expression, answer]
 
 
-def game_condition():
-    condition = 'What number is missing in the progression?'
-    return condition
-
-
-def main():
-    print('Игру brain_progression следует запускать из директории scripts')
-
-
-if __name__ == '__main__':
-    main()
+CONDITION = 'What number is missing in the progression?'

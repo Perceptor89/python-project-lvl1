@@ -3,31 +3,24 @@
 import random
 
 
-def get_expression_with_answer():
-    expression = []
+def calc(number_1, number_2, operand):
+    if operand == '+':
+        return number_1 + number_2
+    elif operand == '-':
+        return number_1 - number_2
+    elif operand == '*':
+        return number_1 * number_2
+    else:
+        return 'invalid operand'
+
+
+def generate_expression_answer():
     operand = random.choice(['+', '-', '*'])
     number_1 = random.randint(1, 20)
     number_2 = random.randint(1, 20)
-    if operand == '+':
-        correct_answer = number_1 + number_2
-        expression = [f'{number_1} + {number_2}', correct_answer]
-    elif operand == '-':
-        correct_answer = number_1 - number_2
-        expression = [f'{number_1} - {number_2}', correct_answer]
-    else:
-        correct_answer = number_1 * number_2
-        expression = [f'{number_1} * {number_2}', correct_answer]
-    return expression
+    expression = f'{number_1} {operand} {number_2}'
+    answer = calc(number_1, number_2, operand)
+    return [expression, answer]
 
 
-def game_condition():
-    condition = 'What is the result of the expression?'
-    return condition
-
-
-def main():
-    print('Игру brain_calc следует запускать из директории scripts')
-
-
-if __name__ == '__main__':
-    main()
+CONDITION = 'What is the result of the expression?'

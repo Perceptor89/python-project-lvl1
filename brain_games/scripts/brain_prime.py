@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games.brain_prime import game_condition
-from brain_games.games.brain_prime import get_expression_with_answer
+from brain_games.games import brain_prime
 from brain_games import brain_engine
 
 
 def main():
-    brain_engine.main(get_expression_with_answer, game_condition())
+    brain_engine.main(brain_prime)
 
 
 if __name__ == '__main__':
