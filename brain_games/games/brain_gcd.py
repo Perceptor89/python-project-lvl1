@@ -3,6 +3,9 @@
 import random
 
 
+CONDITION = 'Find the greatest common divisor of given numbers.'
+
+
 def gcd(number_1, number_2):
     for divider in range(1, min(number_1, number_2) + 1):
         if (number_1 % divider == 0) and (number_2 % divider == 0):
@@ -16,6 +19,3 @@ def generate_expression_answer():
     expression = f'{number_1} {number_2}'
     answer = gcd(number_1, number_2)
     return [expression, answer]
-
-
-CONDITION = 'Find the greatest common divisor of given numbers.'

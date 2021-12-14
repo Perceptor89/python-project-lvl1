@@ -5,7 +5,7 @@ from brain_games import brain_engine
 
 
 def main():
-    brain_engine.main(brain_even)
+    brain_engine.start(brain_even)
 
 
 if __name__ == '__main__':

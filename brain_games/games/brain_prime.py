@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 
+from math import sqrt
 import random
 
 
+CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime(number):
-    i = 1
-    dividers_count = 0
-    while i <= number:
+    start = 2
+    stop = int(sqrt(number))
+    for i in range(start, stop):
         if number % i == 0:
-            dividers_count += 1
-        i += 1
-    if dividers_count == 2:
-        return True
+            return False
     else:
-        return False
+        return True
 
 
 def generate_expression_answer():
@@ -23,6 +24,3 @@ def generate_expression_answer():
     else:
         answer = 'no'
     return [number, answer]
-
-
-CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'

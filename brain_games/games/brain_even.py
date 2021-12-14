@@ -3,6 +3,9 @@
 import random
 
 
+CONDITION = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.'
+
+
 def generate_expression_answer():
     number = random.randint(1, 100)
     if number % 2 == 0:
@@ -10,6 +13,3 @@ def generate_expression_answer():
     else:
         correct_answer = 'no'
     return [number, correct_answer]
-
-
-CONDITION = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.'

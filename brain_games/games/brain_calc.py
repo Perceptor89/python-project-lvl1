@@ -3,6 +3,9 @@
 import random
 
 
+CONDITION = 'What is the result of the expression?'
+
+
 def calc(number_1, number_2, operand):
     if operand == '+':
         return number_1 + number_2
@@ -11,7 +14,7 @@ def calc(number_1, number_2, operand):
     elif operand == '*':
         return number_1 * number_2
     else:
-        return 'invalid operand'
+        return None
 
 
 def generate_expression_answer():
@@ -21,6 +24,3 @@ def generate_expression_answer():
     expression = f'{number_1} {operand} {number_2}'
     answer = calc(number_1, number_2, operand)
     return [expression, answer]
-
-
-CONDITION = 'What is the result of the expression?'
