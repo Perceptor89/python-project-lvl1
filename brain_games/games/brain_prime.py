@@ -9,7 +9,7 @@ CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number):
     start = 2
-    stop = int(sqrt(number))
+    stop = int(sqrt(number)) + 1
     for i in range(start, stop):
         if number % i == 0:
             return False
