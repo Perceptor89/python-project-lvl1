@@ -17,7 +17,7 @@ def generate_expression_answer():
     prg_length = random.randint(5, 10)
     progression = generate_progression(prg_start, prg_difference, prg_length)
     secret_element_index = random.randint(0, prg_length - 1)
-    answer = progression[secret_element_index]
+    answer = str(progression[secret_element_index])
     progression[secret_element_index] = '..'
     expression = ' '.join(map(str, progression))
     return [expression, answer]

@@ -17,5 +17,5 @@ def generate_expression_answer():
     number_1 = random.randint(1, 100)
     number_2 = random.randint(1, 100)
     expression = f'{number_1} {number_2}'
-    answer = gcd(number_1, number_2)
+    answer = str(gcd(number_1, number_2))
     return [expression, answer]
