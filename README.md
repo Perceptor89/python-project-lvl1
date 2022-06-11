@@ -8,7 +8,7 @@
 With this app you can play five different games. Train your brain and have fun!
 
 ### Minimum requirements
-To use this app you need to:
+To use this app you need:
 
 | Program         | Version        |
 |-----------------|----------------|
@@ -16,22 +16,19 @@ To use this app you need to:
 | prompt          | ^0.4.1         |
 
 ### Installation
-To install app clone this repository to yor local space and install it with pip.
-Just use 'python3 -m pip install --user dist/&ast;.whl' command.
-Use 'python3 -m pip install --user dist/&ast;.whl' to remove app.
+For installation use command:
+```
+make quick-install
+```
+### Start games with commands:
+```
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime
+```
 
 
-### asciinema step 5
-[![asciicast](https://asciinema.org/a/ghnXKndQYVsPElRsqL9x3CZXb.svg)](https://asciinema.org/a/ghnXKndQYVsPElRsqL9x3CZXb)
-
-### asciinema step 6
-[![asciicast](https://asciinema.org/a/DK3CDbzXTHzSn7AgYPBmFrRG3.svg)](https://asciinema.org/a/DK3CDbzXTHzSn7AgYPBmFrRG3)
-
-### asciinema step 7
-[![asciicast](https://asciinema.org/a/7zYqz1dsbr6w6zVK7dm2LLipx.svg)](https://asciinema.org/a/7zYqz1dsbr6w6zVK7dm2LLipx)
-
-### asciinema step 8
-[![asciicast](https://asciinema.org/a/HNQu00CNrRTKDN14rwsPIH2Bt.svg)](https://asciinema.org/a/HNQu00CNrRTKDN14rwsPIH2Bt)
-
-### asciinema step 9
-[![asciicast](https://asciinema.org/a/2basmr8H1wda8mPn19n7TO3Hl.svg)](https://asciinema.org/a/2basmr8H1wda8mPn19n7TO3Hl)
+### Brain games DEMO
+[![asciicast](https://asciinema.org/a/IZdFH43X53WzZT9Z0TqL2hkbG.svg)](https://asciinema.org/a/IZdFH43X53WzZT9Z0TqL2hkbG)
